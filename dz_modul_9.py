@@ -58,7 +58,7 @@ def phone_handler(user_input: str):
     phone = CONTACT_BOOK.get(username, None)
     if phone != None:
         return f'{username} namber is {phone}'
-    raise ValueError
+    raise ValueError(f'{username} namber does not exists!')
 
 
 @input_error
