@@ -102,7 +102,7 @@ def parse_user_input(user_input: str) -> set[str, str]:
 
 def main():
         while True:
-            user_input = input('Введіть команду для бота-помічника: ').lower()
+            user_input = input('Enter the command: ').lower()
             try:
                 resalt = parse_user_input(user_input)
                 print(resalt)
